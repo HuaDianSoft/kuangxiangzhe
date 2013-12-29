@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="css/basic.css" rel="stylesheet" />
+<script type="text/javascript" src="js/base.js">
+</script>
+
+<script type="text/javascript">
+function appear(obj){
+	obj.style.borderColor="#DEDEDE";
+}
+function disappear(obj){
+	obj.style.borderColor="#F4F4F4";
+}
+</script>
+
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<script type="text/javascript" src="js/base.js"></script>
+</head>
+
+<body onload="ready()">
+	<div>
+    	<div id="top">
+        	<div id="left">
+            	<span id="top-word" style="color:#FF6633">狂想者比价网欢迎您</span>
+            </div>
+        	<div id="right">
+            	<span>欢迎来到狂想者图书比价网!</span>
+            	<span><a href="">请登录</a></span>
+            	<span><a href="" style="color:#ff6400">免费注册</a></span>
+            </div>
+    	</div>
+
+        <div id="search">
+        	<div class="search_menu">
+        		<div class="cLogo">
+            		<a href="index.html"><img src="img/cLogo.png" /></a>
+            	</div>
+            	<div id="domain">
+                    <form name="f" action="#">
+                    	<input type="text" name="wd" id="word" value="输入书名，作者，出版社或者ISBN" onclick="emptyvalue2()" onblur="initvalue2()"/><input type="button" value="" id="search11"/>
+                	</form>
+        		</div>
+                <div id="clear"></div>
+           </div>      
+        </div>
+        <div id="search_main">
+            <div class="right">
+            	<div class="search_top">
+                	<ul>
+                    	<li><a href="script:void(0)" onclick="script:void(0)">默认排序</a></li>
+                        <li><a href="script:void(0)" onclick="script:void(0)">出版时间</a></li>
+                        <li><a href="script:void(0)" onclick="script:void(0)">价格</a></li>
+                    </ul>
+				</div>
+                <div class="search_main">
+                	<div class="sku" onmousemove="appear(this)" onmouseout="disappear(this)">
+                    	<div class="pic"><a href="script:void(0)"><img src="img/sku1.jpg"/></a></div>
+                        
+                        <div class="title-panel">
+                        	<div class="title"><a href="script:void(0)">西游记</a></div>
+                        	<div class="description">上市时间:2006.02</div>
+                        	<div class="sales-volume">月销量 568件</div>
+                        </div>
+                        
+                        <div class="price-panel">
+                        	<ul>
+                            	<li><span class="ck-name"><a href="scirpt:void(0)">参考价</a></span><span class="ck-price"><a href="scirpt:void(0)">28元</a></span></li>
+                                <li><span class="jd-name"><a href="scirpt:void(0)">京东</a></span><span class="jd-price"><a href="scirpt:void(0)">26.40元</a></span></li>
+                                <li><span class="dd-name"><a href="scirpt:void(0)">当当</a></span><span class="dd-price"><a href="scirpt:void(0)">28.30元</a></span></li>
+                                <li><span class="price-trend"><a href="script:void(0)">价格走势</a></span></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="comment-panel"><a href="script:void(0)"><img src="img/dianping.png" /></a></div>
+                    
+                    </div>
+                    <div class="sku"></div>
+                    <div class="sku"></div>
+                    <div class="sku"></div>
+                    <div class="sku"></div>
+                </div>
+            </div>
+            <div class="left">
+            	<div class="search_top"><p>相关推荐</p></div>
+                <div class="search_main">
+                	<div class="tj-title-panel">
+                    	<div class="tj-pic"><img src="img/sku1.jpg"/></div>
+                    	<div class="tj-price"><p>￥28.00</p></div>
+                    	<div class="tj-title"><a href="script:void(0)">西游记</a></div>
+                    	<div class="tj-sales-volume">月销量 568件</div>
+                    </div>
+                    <div class="tj-title-panel"></div>
+                    <div class="tj-title-panel"></div>
+                </div>
+            </div>
+            	
+            
+            <div id="clear"></div>
+    	</div>
+        
+        
+        <div id="footer">
+    		<div id="footer1">
+        		<div id="footLink">
+            		<a href="about.html">关于我们</a>
+                	<span>&nbsp;</span>
+                	<a href="disclaimer.html">免责声明</a>
+                	<span>&nbsp;</span>
+                	<a href="sitemap.html">网站地图</a>
+                	<span>&nbsp;</span>
+                	<a href="links.html">友情链接</a>
+                	<span>&nbsp;</span>
+                 	<a href="contact.html">联系我们</a>
+            		<p>Copyright @ 2010-2013 www.biyibi.com 狂想者</p>
+            		<p>旗下网站：<a href="index.html">狂想者图书比价网</a></p>
+                </div>
+        	</div>
+        </div>
+        
+    </div>
+</body>
+</html>
